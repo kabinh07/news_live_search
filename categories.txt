@@ -9,3 +9,7 @@ lifestyle
 crime
 cricket
 football
+country
+topic
+category
+subject
