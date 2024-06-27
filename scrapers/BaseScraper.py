@@ -7,19 +7,14 @@ import time
 
 opts = ChromeOptions()
 opts.add_argument("--window-size=1900,1080")
-opts.page_load_strategy = "eager"
+opts.page_load_strategy = "normal"
 
 class BaseScraper:
-    def __init__(self):
+    def __init__(self, **kwargs):
         self.driver = webdriver.Chrome(options=opts)
         self.news_links = []
-    
-    def setup(self, url, keyword, **kwargs):
-        self.base_url = url
-        self.keyword = keyword
         self.attr = kwargs
-
-        # print(self.attr)
+        self.base_url = self.attr["url"]
 
     def get_domain(self):
         elms = self.base_url.split("/")
@@ -31,32 +26,33 @@ class BaseScraper:
     def close_driver(self):
         self.driver.quit()
 
-    def news_search(self):
+    def news_search(self, keyword):
         domain = self.get_domain()
         print(f"Domain: {domain}")
-        self.driver.get(self.base_url+self.keyword)
+        print(self.base_url+keyword)
+        self.driver.get(self.base_url+keyword)
         time.sleep(5)
         try:
-            if self.attr["method"] == "class":
+            if self.attr["search_content"]["method"] == "class":
                 print("Inside class method")
-                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, self.attr["value"])))
+                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, self.attr["search_content"]["value"])))
                 time.sleep(1)
-                content = self.driver.find_element(By.CLASS_NAME, self.attr["value"])
-            elif self.attr["method"] == "id":
+                content = self.driver.find_element(By.CLASS_NAME, self.attr["search_content"]["value"])
+            elif self.attr["search_content"]["method"] == "id":
                 print("Inside id method")
-                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.ID, self.attr["value"])))
+                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.ID, self.attr["search_content"]["value"])))
                 time.sleep(1)
-                content = self.driver.find_element(By.ID, self.attr["value"])
-            elif self.attr["method"] == "xpath":
+                content = self.driver.find_element(By.ID, self.attr["search_content"]["value"])
+            elif self.attr["search_content"]["method"] == "xpath":
                 print("Inside xpath method")
-                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, self.attr["value"])))
+                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, self.attr["search_content"]["value"])))
                 time.sleep(1)
-                content = self.driver.find_element(By.XPATH, self.attr["value"])
-            elif self.attr["method"] == "css_selector":
+                content = self.driver.find_element(By.XPATH, self.attr["search_content"]["value"])
+            elif self.attr["search_content"]["method"] == "css_selector":
                 print("Inside css method")
-                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, self.attr["value"])))
+                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, self.attr["search_content"]["value"])))
                 time.sleep(1)
-                content = self.driver.find_element(By.CSS_SELECTOR, self.attr["value"])
+                content = self.driver.find_element(By.CSS_SELECTOR, self.attr["search_content"]["value"])
             else:
                 print("Inside NULL method")
                 return

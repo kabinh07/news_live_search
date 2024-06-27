@@ -1,0 +1,171 @@
+inputs:
+  thestatesman:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.thestatesman.com/?s=
+    search_content:
+      method: class
+      value: loop-grid-3
+
+  telegraphindia:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.telegraphindia.com/search?search-term=
+    search_content:
+      method: class
+      value: storylisting
+  
+  taiwannews:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.taiwannews.com.tw/search?keyword=
+    search_content:
+      method: class
+      value: mainContainer
+      
+  sentinelassam:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.sentinelassam.com/search?q=
+    search_content:
+      method: class
+      value: list-component-m_list__MRP6o
+
+  opindia:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.opindia.com/?s=
+    search_content:
+      method: class
+      value: wpb_wrapper
+
+  irrawaddy:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.irrawaddy.com/?s=
+    search_content:
+      method: class
+      value: jnews_search_content_wrapper
+  
+  deccanherald:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.deccanherald.com/search?q=
+    search_content:
+      method: class
+      value: container
+      
+  dawn:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.dawn.com/search?cx=016184311056644083324%253Aa1i8yd7zymy&cof=FORID%253A10&ie=UTF-8&q=
+    search_content:
+      method: class
+      value: gsc-results
+
+  dailypioneer:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.dailypioneer.com/searchlist.php?search=
+    search_content:
+      method: class
+      value: highLightedNews
+
+  altnews:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.altnews.in/?s=
+    search_content:
+      method: class
+      value: content-area
+  
+  aa:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.aa.com.tr/en/search/?s=
+    search_content:
+      method: class
+      value: tab-content
+      
+  thepeninsulaqatar:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://thepeninsulaqatar.com/news/search?q=
+    search_content:
+      method: class
+      value: rel-news
+
+  thehimalayantimes:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://thehimalayantimes.com/search?query=
+    search_content:
+      method: class
+      value: post_list
+
+  scroll:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://scroll.in/search?q=
+    search_content:
+      method: class
+      value: all-stories-container
+  
+  nenow:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://nenow.in/?s=
+    search_content:
+      method: class
+      value: site-main
+      
+  amadershomoy:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.amadershomoy.com/search/?s=
+    search_content:
+      method: class
+      value: author-page-news
+
+  thedailystar_bn:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://bangla.thedailystar.net/search?t=
+    search_content:
+      method: class
+      value: gsc-expansionArea
+
+  dhakatribune:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://bangla.dhakatribune.com/search?q=
+    search_content:
+      method: class
+      value: gsc-webResult
+  
+  prothomalo:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.prothomalo.com/search?q=
+    search_content:
+      method: class
+      value: _7rTOU
+      
+  ittefaq:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.ittefaq.com.bd/search?q=
+    search_content:
+      method: class
+      value: gsc-webResult
+
+  bd_pratidin:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.bd-pratidin.com/home/search?cx=5d07de91748e84546&cof=FORID%253A10&ie=UTF-8&q=
+    search_content:
+      method: class
+      value: gsc-expansionArea
+
+  samakal:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://samakal.com/search?q=
+    search_content:
+      method: class
+      value: gsc-expansionArea
+  
+  ajkerpatrika:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://www.ajkerpatrika.com/search?q=
+    search_content:
+      method: class
+      value: gsc-webResult
+      
+  dailyinqilab:
+    type: scrapers.BaseScraper.BaseScraper
+    url: https://dailyinqilab.com/search?q=
+    search_content:
+      method: class
+      value: gsc-expansionArea
+
+
+  

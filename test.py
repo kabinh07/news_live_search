@@ -2,31 +2,31 @@ from scrapers.BaseScraper import BaseScraper
 from scrapers.ManualSearchScraper import ManualSearchScraper
 
 # url = "thehimalayantimes.com"
-# keyword = "world+cup"
-keyword = "খালেদা+জিয়া"
+keyword = "world+cup"
+# keyword = "খালেদা+জিয়া"
 # url = f"https://www.deccanherald.com/search?q={keyword}"
 # url = f"https://www.dailyjanakantha.com/"
 # url = "https://www.kalbela.com/search/google/?q="
 # url = "https://www.amadershomoy.com/search/?s="
 
 
-url = "https://www.jaijaidinbd.com/"
-search_keys ={
-    "search_content": {
-        "method": "id",
-        "value": "search_result_block"
-        },
-    "search_nav": {
-        "icon": {
-            "method": "css_selector",
-            "value": '.fa-magnifying-glass'
-        },
-        "bar": {
-            "method": 'css_selector',
-            "value": '.form-control'
-        }
-    }
-}
+# url = "https://www.jaijaidinbd.com/"
+# search_keys ={
+#     "search_content": {
+#         "method": "id",
+#         "value": "search_result_block"
+#         },
+#     "search_nav": {
+#         "icon": {
+#             "method": "css_selector",
+#             "value": '.fa-magnifying-glass'
+#         },
+#         "bar": {
+#             "method": 'css_selector',
+#             "value": '.form-control'
+#         }
+#     }
+# }
 
 # url = "https://www.kalbela.com/"
 # search_keys ={
@@ -64,6 +64,28 @@ search_keys ={
 #         }
 #     }
 # }
+
+url = "https://www.indiatoday.in/"
+search_keys ={
+    "search_content": {
+        "method": "css_selector",
+        "value": ".B1S3_B1__s3__widget__lSl3T"
+        },
+    "search_nav": {
+        "icon": {
+            "method": "css_selector",
+            "value": '.search__icon'
+        },
+        "bar": {
+            "method": 'css_selector',
+            "value": '.Search_grpsrchbox__d1_jR'
+        }
+    }
+}
+
+
+
+
 b = ManualSearchScraper()
 b.setup(url, keyword, **search_keys)
 news_urls = b.manual_search()
