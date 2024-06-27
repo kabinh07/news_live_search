@@ -5,8 +5,7 @@ import yaml
 with open("config.yaml") as f:
     config = Addict(yaml.load(f, Loader=yaml.SafeLoader))
 
-print(config)
-
-b = object_from_dict(config.inputs.thestatesman)
-urls = b.news_search("world+cup")
+print(config.inputs.kalbela)
+b = object_from_dict(config.inputs.kalbela)
+urls = b.news_search("শেখ হাসিনা")
 print(urls)

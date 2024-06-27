@@ -166,6 +166,62 @@ inputs:
     search_content:
       method: class
       value: gsc-expansionArea
+  
+  jaijaidinbd:
+    type: scrapers.ManualSearchScraper.ManualSearchScraper
+    url: https://www.jaijaidinbd.com/
+    search_content:
+      method: class
+      value: gsc-expansionArea
+    search_nav:
+      icon: 
+        method: css_selector
+        value: .fa-magnifying-glass
+      bar:
+        method: css_selector
+        value: .form-control
+
+  kalbela:
+    type: scrapers.ManualSearchScraper.ManualSearchScraper
+    url: https://www.kalbela.com/
+    search_content:
+      method: id
+      value: search_result_block
+    search_nav:
+      icon: 
+        method: css_selector
+        value: "#dropdownSearch > i:nth-child(1)"
+      bar:
+        method: css_selector
+        value: .form-control
+
+  dailyjanakantha:
+    type: scrapers.ManualSearchScraper.ManualSearchScraper
+    url: https://www.dailyjanakantha.com/
+    search_content:
+      method: class
+      value: gsc-resultsbox-visible
+    search_nav:
+      icon: 
+        method: css_selector
+        value: "li.menu-search > a:nth-child(1) > i:nth-child(1)"
+      bar:
+        method: css_selector
+        value: ".pl-0 > form:nth-child(1) > div:nth-child(1) > input:nth-child(4)"
+
+  indiatoday:
+    type: scrapers.ManualSearchScraper.ManualSearchScraper
+    url: https://www.indiatoday.in/
+    search_content:
+      method: css_selector
+      value: .B1S3_B1__s3__widget__lSl3T
+    search_nav:
+      icon: 
+        method: css_selector
+        value: .search__icon
+      bar:
+        method: css_selector
+        value: ".Search_grpsrchbox__d1_jR"
 
 
   

@@ -8,7 +8,7 @@ import time
 from .BaseScraper import BaseScraper
 
 class ManualSearchScraper(BaseScraper):
-    def manual_search(self):
+    def news_search(self, keyword):
         self.driver.get(self.base_url)
         if self.attr["search_nav"]["icon"]["method"] == "class":
             search_icon = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable((By.CLASS_NAME, self.attr["search_nav"]["icon"]["value"])))
@@ -32,22 +32,22 @@ class ManualSearchScraper(BaseScraper):
         
         if self.attr["search_nav"]["icon"]["method"] == "class":
             search_bar = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, self.attr["search_nav"]["bar"]["value"])))
-            search_bar.send_keys(self.keyword)
+            search_bar.send_keys(keyword)
             time.sleep(1)
             search_bar.send_keys(Keys.RETURN)
         elif self.attr["search_nav"]["icon"]["method"] == "id":
             search_bar = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.ID, self.attr["search_nav"]["bar"]["value"])))
-            search_bar.send_keys(self.keyword)
+            search_bar.send_keys(keyword)
             time.sleep(1)
             search_bar.send_keys(Keys.RETURN)
         elif self.attr["search_nav"]["icon"]["method"] == "xpath":
             search_bar = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, self.attr["search_nav"]["bar"]["value"])))
-            search_bar.send_keys(self.keyword)
+            search_bar.send_keys(keyword)
             time.sleep(1)
             search_bar.send_keys(Keys.RETURN)
         elif self.attr["search_nav"]["icon"]["method"] == "css_selector":
             search_bar = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, self.attr["search_nav"]["bar"]["value"])))
-            search_bar.send_keys(self.keyword)
+            search_bar.send_keys(keyword)
             time.sleep(1)
             search_bar.send_keys(Keys.RETURN)
         else:
@@ -60,12 +60,11 @@ class ManualSearchScraper(BaseScraper):
             print(self.driver.title)
         domain = self.get_domain()
         print(f"Domain: {domain}")
-        print(self.driver.current_url)
         time.sleep(5)
-        print(self.driver.current_url)
         try:
             if self.attr["search_content"]["method"] == "class":
                 print("Inside class method")
+                print(self.attr["search_content"]["value"])
                 WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, self.attr["search_content"]["value"])))
                 content = self.driver.find_element(By.CLASS_NAME, self.attr["search_content"]["value"])
             elif self.attr["search_content"]["method"] == "id":
