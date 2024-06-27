@@ -7,6 +7,7 @@ import time
 
 opts = ChromeOptions()
 opts.add_argument("--window-size=1900,1080")
+opts.add_argument("--headless")
 opts.page_load_strategy = "normal"
 
 class BaseScraper:

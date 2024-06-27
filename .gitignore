@@ -1,1 +1,8 @@
 /venv
+/categories.txt
+/context_box.txt
+/inputs_with_main_content.txt
+/scraper.py
+/spam_sites.txt
+/test.py
+/test.txt
