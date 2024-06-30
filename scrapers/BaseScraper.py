@@ -4,6 +4,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ChromeOptions
 from selenium.webdriver.common.by import By
 import time
+import logging
+
+logger = logging.getLogger("api_logger")
 
 opts = ChromeOptions()
 opts.add_argument("--window-size=1900,1080")
@@ -29,36 +32,36 @@ class BaseScraper:
 
     def news_search(self, keyword):
         domain = self.get_domain()
-        print(f"Domain: {domain}")
-        print(self.base_url+keyword)
+        logger.info(f"Domain: {domain}")
+        logger.info(self.base_url+keyword)
         self.driver.get(self.base_url+keyword)
         time.sleep(5)
         try:
             if self.attr["search_content"]["method"] == "class":
-                print("Inside class method")
+                logger.info("Inside class method")
                 WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, self.attr["search_content"]["value"])))
                 time.sleep(1)
                 content = self.driver.find_element(By.CLASS_NAME, self.attr["search_content"]["value"])
             elif self.attr["search_content"]["method"] == "id":
-                print("Inside id method")
+                logger.info("Inside id method")
                 WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.ID, self.attr["search_content"]["value"])))
                 time.sleep(1)
                 content = self.driver.find_element(By.ID, self.attr["search_content"]["value"])
             elif self.attr["search_content"]["method"] == "xpath":
-                print("Inside xpath method")
+                logger.info("Inside xpath method")
                 WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, self.attr["search_content"]["value"])))
                 time.sleep(1)
                 content = self.driver.find_element(By.XPATH, self.attr["search_content"]["value"])
             elif self.attr["search_content"]["method"] == "css_selector":
-                print("Inside css method")
+                logger.info("Inside css method")
                 WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, self.attr["search_content"]["value"])))
                 time.sleep(1)
                 content = self.driver.find_element(By.CSS_SELECTOR, self.attr["search_content"]["value"])
             else:
-                print("Inside NULL method")
+                logger.info("Inside NULL method")
                 return
         except Exception as e:
-            print(e)
+            logger.info(e)
             return
         hlinks = content.find_elements(By.TAG_NAME, "a")
         for link in hlinks:

@@ -1,0 +1,86 @@
+2024-06-30 11:26:42,867 - api_logger - INFO - Domain: www.thestatesman.com
+2024-06-30 11:26:42,867 - api_logger - INFO - Domain: www.telegraphindia.com
+2024-06-30 11:26:42,867 - api_logger - INFO - https://www.thestatesman.com/?s=world+cup
+2024-06-30 11:26:42,867 - api_logger - INFO - Domain: www.taiwannews.com.tw
+2024-06-30 11:26:42,868 - api_logger - INFO - https://www.telegraphindia.com/search?search-term=world+cup
+2024-06-30 11:26:42,868 - api_logger - INFO - Domain: www.sentinelassam.com
+2024-06-30 11:26:42,869 - api_logger - INFO - Domain: www.opindia.com
+2024-06-30 11:26:42,869 - api_logger - INFO - https://www.taiwannews.com.tw/search?keyword=world+cup
+2024-06-30 11:26:42,870 - api_logger - INFO - https://www.sentinelassam.com/search?q=world+cup
+2024-06-30 11:26:42,870 - api_logger - INFO - https://www.opindia.com/?s=world+cup
+2024-06-30 11:26:48,116 - api_logger - INFO - Inside class method
+2024-06-30 11:26:48,644 - api_logger - INFO - Inside class method
+2024-06-30 11:26:49,848 - api_logger - INFO - Inside class method
+2024-06-30 11:26:51,066 - api_logger - INFO - Domain: www.irrawaddy.com
+2024-06-30 11:26:51,067 - api_logger - INFO - https://www.irrawaddy.com/?s=world+cup
+2024-06-30 11:26:52,052 - api_logger - INFO - Inside class method
+2024-06-30 11:26:52,245 - api_logger - INFO - Domain: www.deccanherald.com
+2024-06-30 11:26:52,265 - api_logger - INFO - https://www.deccanherald.com/search?q=world+cup
+2024-06-30 11:26:52,269 - api_logger - INFO - Domain: www.dawn.com
+2024-06-30 11:26:52,269 - api_logger - INFO - https://www.dawn.com/search?cx=016184311056644083324%253Aa1i8yd7zymy&cof=FORID%253A10&ie=UTF-8&q=world+cup
+2024-06-30 11:26:52,275 - api_logger - INFO - HTTPConnectionPool(host='localhost', port=50309): Max retries exceeded with url: /session/293752dda84f87b976272de0e2edbdea/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7e41823318a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-06-30 11:26:52,275 - api_logger - INFO - Domain: www.dailypioneer.com
+2024-06-30 11:26:52,276 - api_logger - INFO - Domain: www.altnews.in
+2024-06-30 11:26:52,277 - api_logger - INFO - HTTPConnectionPool(host='localhost', port=40459): Max retries exceeded with url: /session/82ff200803515d34655042fcc6e89a6e/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7e4182332140>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-06-30 11:26:52,277 - api_logger - INFO - https://www.dailypioneer.com/searchlist.php?search=world+cup
+2024-06-30 11:26:52,277 - api_logger - INFO - https://www.altnews.in/?s=world+cup
+2024-06-30 11:26:52,278 - api_logger - INFO - Domain: www.aa.com.tr
+2024-06-30 11:26:52,282 - api_logger - INFO - https://www.aa.com.tr/en/search/?s=world+cup
+2024-06-30 11:26:52,286 - api_logger - INFO - Domain: thepeninsulaqatar.com
+2024-06-30 11:26:52,288 - api_logger - INFO - https://thepeninsulaqatar.com/news/search?q=world+cup
+2024-06-30 11:26:52,291 - api_logger - INFO - Domain: thehimalayantimes.com
+2024-06-30 11:26:52,292 - api_logger - INFO - Domain: scroll.in
+2024-06-30 11:26:52,294 - api_logger - INFO - https://thehimalayantimes.com/search?query=world+cup
+2024-06-30 11:26:52,294 - api_logger - INFO - https://scroll.in/search?q=world+cup
+2024-06-30 11:26:52,306 - api_logger - INFO - Domain: nenow.in
+2024-06-30 11:26:52,306 - api_logger - INFO - https://nenow.in/?s=world+cup
+2024-06-30 11:26:52,312 - api_logger - INFO - Domain: www.amadershomoy.com
+2024-06-30 11:26:52,313 - api_logger - INFO - Domain: bangla.thedailystar.net
+2024-06-30 11:26:52,313 - api_logger - INFO - https://www.amadershomoy.com/search/?s=world+cup
+2024-06-30 11:26:52,313 - api_logger - INFO - https://bangla.thedailystar.net/search?t=world+cup
+2024-06-30 11:26:52,330 - api_logger - INFO - Domain: bangla.dhakatribune.com
+2024-06-30 11:26:52,331 - api_logger - INFO - https://bangla.dhakatribune.com/search?q=world+cup
+2024-06-30 11:26:52,332 - api_logger - INFO - Domain: www.prothomalo.com
+2024-06-30 11:26:52,333 - api_logger - INFO - Domain: www.ittefaq.com.bd
+2024-06-30 11:26:52,333 - api_logger - INFO - https://www.prothomalo.com/search?q=world+cup
+2024-06-30 11:26:52,334 - api_logger - INFO - https://www.ittefaq.com.bd/search?q=world+cup
+2024-06-30 11:26:52,337 - api_logger - INFO - Domain: www.bd-pratidin.com
+2024-06-30 11:26:52,339 - api_logger - INFO - https://www.bd-pratidin.com/home/search?cx=5d07de91748e84546&cof=FORID%253A10&ie=UTF-8&q=world+cup
+2024-06-30 11:26:52,341 - api_logger - INFO - Domain: samakal.com
+2024-06-30 11:26:52,341 - api_logger - INFO - Domain: www.ajkerpatrika.com
+2024-06-30 11:26:52,342 - api_logger - INFO - https://samakal.com/search?q=world+cup
+2024-06-30 11:26:52,342 - api_logger - INFO - https://www.ajkerpatrika.com/search?q=world+cup
+2024-06-30 11:26:52,343 - api_logger - INFO - Domain: dailyinqilab.com
+2024-06-30 11:26:52,343 - api_logger - INFO - https://dailyinqilab.com/search?q=world+cup
+2024-06-30 11:26:53,097 - api_logger - INFO - HTTPConnectionPool(host='localhost', port=45883): Max retries exceeded with url: /session/3190520beff99f32adccfdf601e74934/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7e418019f5b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-06-30 12:23:49,450 - api_logger - INFO - Domain: samakal.com
+2024-06-30 12:23:49,451 - api_logger - INFO - Domain: www.ajkerpatrika.com
+2024-06-30 12:23:49,451 - api_logger - INFO - Domain: dailyinqilab.com
+2024-06-30 12:23:49,452 - api_logger - INFO - https://samakal.com/search?q=world+cup
+2024-06-30 12:23:49,452 - api_logger - INFO - https://www.ajkerpatrika.com/search?q=world+cup
+2024-06-30 12:23:49,453 - api_logger - INFO - https://dailyinqilab.com/search?q=world+cup
+2024-06-30 12:23:54,848 - api_logger - INFO - Inside class method
+2024-06-30 12:23:55,612 - api_logger - INFO - Inside class method
+2024-06-30 12:24:05,204 - api_logger - INFO - Message: 
+Stacktrace:
+#0 0x5f944a3ffc7a <unknown>
+#1 0x5f944a0e2e2c <unknown>
+#2 0x5f944a12f661 <unknown>
+#3 0x5f944a12f751 <unknown>
+#4 0x5f944a173f64 <unknown>
+#5 0x5f944a1525ed <unknown>
+#6 0x5f944a171303 <unknown>
+#7 0x5f944a152363 <unknown>
+#8 0x5f944a122247 <unknown>
+#9 0x5f944a122b9e <unknown>
+#10 0x5f944a3c624b <unknown>
+#11 0x5f944a3ca2f1 <unknown>
+#12 0x5f944a3b1afe <unknown>
+#13 0x5f944a3cae52 <unknown>
+#14 0x5f944a39679f <unknown>
+#15 0x5f944a3ef638 <unknown>
+#16 0x5f944a3ef810 <unknown>
+#17 0x5f944a3fedac <unknown>
+#18 0x77543b294ac3 <unknown>
+
+2024-06-30 12:24:06,676 - api_logger - INFO - Inside class method

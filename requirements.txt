@@ -1,0 +1,4 @@
+addict==2.4.0
+iglovikov-helper-functions==0.0.53
+requests==2.32.3
+selenium==4.21.0
